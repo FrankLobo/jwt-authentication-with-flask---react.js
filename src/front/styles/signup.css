@@ -2,3 +2,11 @@
   margin: 0 auto;
   width: 500px;
 }
+.button-enter:hover {
+  background-color: rgb(51, 148, 116);
+  border-color: rgb(51, 148, 116);
+  color: aquamarine;
+}
+.errors-signup {
+  color: rgb(255, 190, 92);
+}

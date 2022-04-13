@@ -54,7 +54,7 @@ export const Login = () => {
         <>
             <div className="main-login mt-5">
                 <div className="container-login">
-                    <h1 className="title-login">Login</h1>
+                    <h1 className="title-login text-white text-center">Login</h1>
                     <form className="form-login" onSubmit={(e) => handleSubmit(e)}>
                         <div className="mb-3">
                             <input
@@ -76,7 +76,7 @@ export const Login = () => {
                                 onChange={(e) => { handleChange(e) }} />
                             <p className="errors-login">{loginErrors.password}</p>
                         </div>
-                        <button type="submit" className="btn btn-primary button-login d-grid gap-2 col-3 mx-auto">Enter</button>
+                        <button type="submit" className="btn btn-primary button-login d-grid gap-2 col-3 mx-auto button-enter">Enter</button>
                     </form>
                 </div>
             </div>

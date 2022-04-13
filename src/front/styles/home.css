@@ -1,7 +1,34 @@
-/*
-    home.css: This website contains selectors only used in home.css
+ul li .button-navbar {
+  margin: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: none;
+  box-decoration-break: none;
+}
+.navbar-toggler {
+  float: right;
+  color: #f0e4e4;
+  background-color: #d47c8f;
+}
 
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
+.navbar-collapse {
+  display: inline-flex;
+  justify-content: end;
+}
+.navbar-nav {
+  display: inline-flex;
+  justify-content: end;
+}
+body {
+  background-image: url("https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=400&w=1260");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.link-4geeks {
+  color: #ff9fa8;
+}
+.button-enter {
+  background-color: aquamarine;
+  border-color: aquamarine;
+  color: green;
+}

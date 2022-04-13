@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
 export const Navbar = () => {
+	const { actions } = useContext(Context);
+
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light bg-light">
 			<div className="container-fluid">
@@ -19,19 +22,13 @@ export const Navbar = () => {
 					</ul>
 					<ul className="navbar-nav two">
 						<li className="nav-item">
-							<Link to="/login">
-								<button className="button-navbar">Login</button>
-							</Link>
+							<Link className="nav-link" to="/login">Login</Link>
 						</li>
 						<li className="nav-item">
-							<Link to="/signup">
-								<button className="button-navbar">Signup</button>
-							</Link>
+							<Link className="nav-link" to="/signup">Signup</Link>
 						</li>
 						<li className="nav-item">
-							<Link to="/login">
-								<button className="button-navbar">Logout</button>
-							</Link>
+							<Link className="nav-link" to="/login" onClick={() => actions.logOut(history)}>Logout</Link>
 						</li>
 					</ul>
 				</div>

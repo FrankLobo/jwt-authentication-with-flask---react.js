@@ -5,3 +5,11 @@
 .button-navbar {
   float: right;
 }
+.button-enter:hover {
+  background-color: rgb(51, 148, 116);
+  border-color: rgb(51, 148, 116);
+  color: aquamarine;
+}
+.errors-login {
+  color: rgb(255, 190, 92);
+}

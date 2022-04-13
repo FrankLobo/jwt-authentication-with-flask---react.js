@@ -70,7 +70,7 @@ export const SignUp = () => {
         <>
             <form onSubmit={(e) => handleSubmit(e)}>
                 <div className="container-signup mt-5">
-                    <h1 className="title-login">Signup</h1>
+                    <h1 className="title-signup text-white text-center">Signup</h1>
                     <div className="mb-3">
                         <input type="text" className="form-control" id="first_name" name="first_name" placeholder="First name" onChange={(e) => { handleChange(e) }} />
                         <p className="errors-signup">{signUpErrors.first_name}</p>
@@ -88,7 +88,7 @@ export const SignUp = () => {
                         <input type="password" className="form-control" id="password" name="password" placeholder="Password" onChange={(e) => { handleChange(e) }} />
                         <p className="errors-signup">{signUpErrors.password}</p>
                     </div>
-                    <button type="submit" className="btn btn-primary button-login d-grid gap-2 col-3 mx-auto">Enter</button>
+                    <button type="submit" className="btn btn-primary button-login d-grid gap-2 col-3 mx-auto button-enter">Enter</button>
                 </div>
             </form>
         </>
